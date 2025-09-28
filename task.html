@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col items-center p-6">
+  <h1 class="text-3xl font-bold mb-6">📝 Task Manager</h1>
+
+  <!-- Task Input -->
+  <div class="flex gap-2 mb-6">
+    <input id="taskInput" type="text" placeholder="Enter a task"
+      class="border p-2 rounded w-64">
+    <select id="category" class="border p-2 rounded">
+      <option>Work</option>
+      <option>Personal</option>
+      <option>Study</option>
+    </select>
+    <button id="addTask" class="bg-blue-500 text-white px-4 py-2 rounded">Add</button>
+  </div>
+
+  <!-- Task List -->
+  <ul id="taskList" class="w-80 space-y-2"></ul>
+</body>
+</html>
